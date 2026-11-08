@@ -1,0 +1,32 @@
+{
+  "name": "celo-fee-kit",
+  "version": "0.1.0",
+  "description": "Small typed helpers for paying gas in stablecoins on Celo (CIP-64 fee abstraction) with viem.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": ["celo", "minipay", "cip-64", "fee-abstraction", "viem", "stablecoin"],
+  "author": "Victor Nwaokobia",
+  "license": "MIT",
+  "peerDependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "viem": "^2.21.0",
+    "vitest": "^2.1.0"
+  }
+}
